@@ -43,7 +43,7 @@ DOCTYPE html>
                     <a href="#" class="nav-link text-white"><i class="fas fa-search"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="compras.html" class="nav-link text-white"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="shop-single.html" class="nav-link text-white"><i class="fas fa-shopping-cart"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="login.html" class="nav-link text-white"><i class="fas fa-user"></i></a>
@@ -123,9 +123,9 @@ DOCTYPE html>
     <!-- Script del carrito de compras -->
     <script>
         const products = [
-            { id: 1, name: 'Producto 1', price: 10.00, image: 'https://via.placeholder.com/100' },
-            { id: 2, name: 'Producto 2', price: 20.00, image: 'https://via.placeholder.com/100' },
-            { id: 3, name: 'Producto 3', price: 30.00, image: 'https://via.placeholder.com/100' }
+            { id: 1, name: 'Producto 1', price: 10.00, image: "assets/image1" },
+            { id: 2, name: 'Producto 2', price: 20.00, image: 'assets/imagen2' },
+            { id: 3, name: 'Producto 3', price: 30.00, image: 'assets/imagen3' }
         ];
 
         let cart = [];
@@ -141,8 +141,9 @@ DOCTYPE html>
                 productElement.innerHTML = `
                     <div class="card">
                         <img src="${product.image}" class="card-img-top" alt="${product.name}">
+
                         <div class="card-body">
-                            <h5 class="card-title">${product.name}</h5>
+                            <h5 class="card-title">${assets/image}</h5>
                             <p class="card-text">Precio: $${product.price.toFixed(2)}</p>
                             <button class="btn btn-primary" onclick="addToCart(${product.id})">Agregar al carrito</button>
                         </div>
